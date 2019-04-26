@@ -519,8 +519,8 @@ html, body {
 
 .sce {
   width: 100%;
-  height: 2130px;
-  background: url(../img/scbg.png) center #292b39 no-repeat;
+  height: 2300px;
+  background: url(../img/scbg.png) center #121213 no-repeat;
 }
 @media only screen and (max-width: 960px) {
   .sce {
@@ -1138,6 +1138,9 @@ html, body {
 .contactbox .address p {
   font-size: 15px;
   line-height: 26px;
+}
+.contactbox .address p span {
+  color: #11cdd4;
 }
 .contactbox .address p a {
   text-decoration: underline;
