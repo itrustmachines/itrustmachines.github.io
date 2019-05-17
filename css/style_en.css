@@ -65,7 +65,7 @@ html, body {
   width: 430px;
   height: 50px;
   position: relative;
-  background: url(../img/loading.png) no-repeat;
+  background: url(../img/loading_en.png) no-repeat;
   margin: auto;
 }
 @media only screen and (max-width: 960px) {
@@ -333,9 +333,8 @@ html, body {
 }
 .kv .slogan .box h2 {
   font-size: 14.3px;
-  margin-top: 10px;
   letter-spacing: 1px;
-  line-height: 16px;
+  line-height: 20px;
   font-family: "Roboto", sans-serif;
 }
 @media only screen and (max-width: 960px) {
@@ -357,17 +356,31 @@ html, body {
     margin: 10px auto;
   }
 }
+.kv .slogan .box h3 {
+  font-size: 50px;
+  line-height: 52px;
+  font-family: "Black Ops One", cursive;
+  color: #11cdd4;
+}
+@media only screen and (max-width: 960px) {
+  .kv .slogan .box h3 {
+    font-size: 38px;
+    line-height: 42px;
+  }
+}
 .kv .slogan .box p {
-  font-size: 17px;
+  font-size: 14px;
   line-height: 25px;
+  margin-top: 10px;
   color: #11cdd4;
 }
 @media only screen and (max-width: 960px) {
   .kv .slogan .box p {
-    width: 93%;
+    width: 100%;
     margin: auto;
-    font-size: 4.2vw;
-    line-height: 6vw;
+    margin-top: 5px;
+    font-size: 3vw;
+    line-height: 4.8vw;
   }
 }
 .kv .slogan .box .scrollbtn {
@@ -385,6 +398,7 @@ html, body {
   .kv .slogan .box .scrollbtn {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 80px;
   }
 }
 .kv .slogan .box .scrollbtn::after {
@@ -497,7 +511,7 @@ html, body {
 }
 @media only screen and (max-width: 960px) {
   .about {
-    height: 730px;
+    height: 800px;
     background: url(../img/itm_bg_m_01.png) center bottom #292b39 no-repeat;
     background-size: 100% auto;
   }
@@ -505,8 +519,9 @@ html, body {
 
 .core {
   width: 100%;
-  height: 2220px;
-  background: url(../img/corebg.png) center #fff no-repeat;
+  height: auto;
+  background: url(../img/core_top.png) center top no-repeat, url(../img/core_bottom.png) center bottom no-repeat;
+  background-color: #fff;
 }
 @media only screen and (max-width: 960px) {
   .core {
@@ -520,7 +535,7 @@ html, body {
 .sce {
   width: 100%;
   height: 2300px;
-  background: url(../img/scbg.png) center #121213 no-repeat;
+  background: url(../img/scbg.png) top center #121213 no-repeat;
 }
 @media only screen and (max-width: 960px) {
   .sce {
@@ -532,8 +547,9 @@ html, body {
 
 .team {
   width: 100%;
-  height: 1220px;
-  background: url(../img/teambg.png) center #fff no-repeat;
+  height: 1375px;
+  background: url(../img/team_top.png) center top no-repeat, url(../img/team_bottom.png) center bottom no-repeat;
+  background-color: #fff;
 }
 @media only screen and (max-width: 960px) {
   .team {
@@ -678,6 +694,7 @@ html, body {
   margin-top: 40px;
   line-height: 26px;
   text-align: justify;
+  text-justify: inter-ideograph;
 }
 @media only screen and (max-width: 960px) {
   .all_box .tittle_left p {
@@ -744,7 +761,7 @@ html, body {
   width: 1020px;
   height: auto;
   margin: 0 0 0 90px;
-  padding-top: 65px;
+  padding: 65px 0;
   font-family: "Microsoft JhengHei";
 }
 @media only screen and (max-width: 960px) {
@@ -793,6 +810,7 @@ html, body {
 .flow .tag .txt h2 {
   font-size: 25px;
   font-weight: bold;
+  line-height: 28px;
 }
 @media only screen and (max-width: 960px) {
   .flow .tag .txt h2 {
@@ -855,6 +873,7 @@ html, body {
 }
 .scebox .scetxt h2 {
   font-size: 25px;
+  line-height: 28px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -874,9 +893,11 @@ html, body {
 .scebox .scetxt p {
   font-size: 15px;
   line-height: 26px;
+  width: 900px;
 }
 @media only screen and (max-width: 960px) {
   .scebox .scetxt p {
+    width: 100%;
     font-size: 3vw;
     line-height: 5vw;
   }
@@ -980,7 +1001,6 @@ html, body {
   line-height: 20px;
   color: #787878;
   margin: 0 0 8px 15px;
-  text-align: justify;
 }
 
 .newsbox {
@@ -1052,10 +1072,10 @@ html, body {
   transition: 0.3s;
 }
 .newsbox .info a h2 {
-  font-size: 15px;
-  height: 75px;
+  font-size: 13px;
+  height: 100px;
   color: #fff;
-  line-height: 24px;
+  line-height: 20px;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   -webkit-transition: 0.3s;
