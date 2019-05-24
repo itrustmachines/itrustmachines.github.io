@@ -356,7 +356,7 @@ html,body
 
 .footer
 	width: 100%
-	height: 100px
+	height: 200px
 	background-color: $color
 	position: relative
 	display: inline-block
@@ -369,6 +369,22 @@ html,body
 		font-size: 12px
 		font-family: "Microsoft JhengHei"
 		color: #fff
+	.icon
+		width: 100%
+		margin: 20px auto
+		text-align: center
+		a
+			width: 60px
+			height: 60px
+			display: inline-block
+			margin-left: 4px
+			@include transition (0.3s)
+			img
+				width: 100%
+				display: block
+			&:hover
+				opacity: 0.6
+
 
 .gotop
 	width: 60px
