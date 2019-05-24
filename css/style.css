@@ -378,6 +378,7 @@ html, body {
     margin: auto;
     font-size: 4.2vw;
     line-height: 6vw;
+    margin-top: 20px;
   }
 }
 .kv .slogan .box .scrollbtn {
