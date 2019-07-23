@@ -685,6 +685,7 @@ html,body
 	width: 1020px
 	height: auto
 	margin: 0 0 0 90px
+	padding-bottom: 50px
 	+rwd(mb)
 		width: 80%
 		margin-left: 10%
@@ -695,11 +696,30 @@ html,body
 		content: ""
 		display: block
 		clear: both
+
+	.fblink a
+		display: block
+		width: 150px
+		height: 40px
+		line-height: 40px
+		margin: auto
+		+border-radius(40px)
+		text-align: center
+		font-size: 16px
+		border: 2px solid $mc
+		color: $mc
+		text-decoration: none
+		@include transition (0.3s)
+		&:hover
+			border: 2px solid #fff
+			color: #fff
+
+
 	.info
 		width: 255px
 		display: inline-flex
 		flex-wrap: nowrap
-		margin: 0 0 20px -4px
+		margin: 0 0 30px -4px
 		+rwd(mb)
 			width: 100%
 		.newmain
@@ -748,6 +768,7 @@ html,body
 				line-height: 30px
 				margin: 20px auto
 				@include transition (0.3s)
+
 
 		& a:hover img
 			width: 250px
