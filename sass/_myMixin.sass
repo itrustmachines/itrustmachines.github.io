@@ -2,91 +2,91 @@
 // $img_m: "../images/mobile/"
 
 %clear
-	content: ''
-	display: block
-	clear: both
+  content: ''
+  display: block
+  clear: both
 
 @mixin bg($pic)
-	background: url(#{$img}#{$pic}) no-repeat
-	width: image-width("#{$img}#{$pic}")  
-	height: image-height("#{$img}#{$pic}")
+  background: url(#{$img}#{$pic}) no-repeat
+  width: image-width("#{$img}#{$pic}")
+  height: image-height("#{$img}#{$pic}")
 
 
 @mixin rwd($point)
-	@if $point == pc
-		@media only screen and (max-width: 1600px)
-			@content
-	@else if $point == pad
-		@media only screen and (max-width: 1200px)
-			@content
-	@else if $point == mb
-		@media only screen and (max-width: 960px)
-			@content
+  @if $point == pc
+    @media only screen and (max-width: 1600px)
+      @content
+  @else if $point == pad
+    @media only screen and (max-width: 1200px)
+      @content
+  @else if $point == mb
+    @media only screen and (max-width: 960px)
+      @content
 
 @mixin text-hide
-	text-indent: 100%
-	white-space: nowrap
-	overflow: hidden
+  text-indent: 100%
+  white-space: nowrap
+  overflow: hidden
 
 @mixin poa($top:null,$right:null,$bottom:null,$left:null,$zindex:null)
-	position: absolute
-	top: $top
-	right: $right
-	bottom: $bottom
-	left: $left
-	z-index: $zindex
-	@content
+  position: absolute
+  top: $top
+  right: $right
+  bottom: $bottom
+  left: $left
+  z-index: $zindex
+  @content
 
 @mixin por($top:null,$right:null,$bottom:null,$left:null,$zindex:null)
-	position: relative
-	top: $top
-	right: $right
-	bottom: $bottom
-	left: $left
-	z-index: $zindex
-	@content
+  position: relative
+  top: $top
+  right: $right
+  bottom: $bottom
+  left: $left
+  z-index: $zindex
+  @content
 
 @mixin pof($top:null,$right:null,$bottom:null,$left:null,$zindex:null)
-	position: fixed
-	top: $top
-	right: $right
-	bottom: $bottom
-	left: $left
-	z-index: $zindex
-	@content
+  position: fixed
+  top: $top
+  right: $right
+  bottom: $bottom
+  left: $left
+  z-index: $zindex
+  @content
 
 @mixin border-radius($radius)
-	border-radius: $radius
-	-webkit-border-radius: $radius
-	-moz-border-radius: $radius
-	@content
+  border-radius: $radius
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  @content
 
 @mixin transition($transition)
-	-moz-transition: $transition
-	-o-transition: $transition
-	-webkit-transition: $transition
-	transition: $transition
-	@content
+  -moz-transition: $transition
+  -o-transition: $transition
+  -webkit-transition: $transition
+  transition: $transition
+  @content
 
 @mixin transform($transforms)
-	-moz-transform: $transforms
-	-o-transform: $transforms
-	-ms-transform: $transforms
-	-webkit-transform: $transforms
-	transform: $transforms
-	@content
+  -moz-transform: $transforms
+  -o-transform: $transforms
+  -ms-transform: $transforms
+  -webkit-transform: $transforms
+  transform: $transforms
+  @content
 
-@mixin rotate ($deg)
-	@include transform(rotate(#{$deg}deg))
-	@content
+@mixin rotate($deg)
+  @include transform(rotate(#{$deg}deg))
+  @content
 
 @mixin filter($filter-type,$filter-amount)
-	-webkit-filter: $filter-type+unquote('(#{$filter-amount})')
-	-moz-filter: $filter-type+unquote('(#{$filter-amount})')
-	-ms-filter: $filter-type+unquote('(#{$filter-amount})')
-	-o-filter: $filter-type+unquote('(#{$filter-amount})')
-	filter: $filter-type+unquote('(#{$filter-amount})')
-	@content
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})')
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})')
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})')
+  -o-filter: $filter-type+unquote('(#{$filter-amount})')
+  filter: $filter-type+unquote('(#{$filter-amount})')
+  @content
 
 // @mixin scale($scale)
 // 	@include transform(scale($scale))
