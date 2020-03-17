@@ -1050,7 +1050,7 @@ html, body {
 
 @media only screen and (max-width: 960px) {
     .flow .m_img, .scebox .m_img {
-        display: block;
+        width: 78vw;
     }
 }
 
@@ -1058,7 +1058,7 @@ html, body {
     position: relative;
     width: 1020px;
     height: auto;
-    margin: 0 0 0 90px;
+    margin: 0 0 0 25px;
     padding-top: 55px;
     display: flex;
 }
@@ -1145,7 +1145,7 @@ html, body {
     font-size: 13px;
     line-height: 20px;
     color: #787878;
-    margin: 0 0 8px 15px;
+    margin: 0 15px 8px 15px;
 }
 
 .newsbox {
