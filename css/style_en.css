@@ -588,8 +588,8 @@ html, body {
 
 .sce {
     width: 100%;
-    height: 2300px;
-    background: url(../img/scbg.png) top center #121213 no-repeat;
+    height: 5000px;
+    background: url(../img/scbg.png) top center #121213 repeat;
 }
 
 @media only screen and (max-width: 960px) {
