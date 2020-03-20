@@ -586,7 +586,7 @@ html, body {
 
 .sce {
     width: 100%;
-    height: 4800px;
+    height: 3000px;
     background: url(../img/scbg.png) center #292b39 repeat;
 }
 
@@ -1050,7 +1050,6 @@ html, body {
 @media only screen and (max-width: 960px) {
     .flow .m_img, .scebox .m_img {
         display: block;
-
     }
 }
 

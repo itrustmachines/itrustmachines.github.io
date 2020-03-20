@@ -588,7 +588,7 @@ html, body {
 
 .sce {
     width: 100%;
-    height: 5000px;
+    height: 3000px;
     background: url(../img/scbg.png) top center #121213 repeat;
 }
 
@@ -962,7 +962,7 @@ html, body {
     width: 1020px;
     height: auto;
     margin: 0 0 0 90px;
-    padding-top: 75px;
+    padding-bottom: 75px;
     font-family: "Microsoft JhengHei";
     color: #fff;
 }
@@ -1040,7 +1040,6 @@ html, body {
 
 @media only screen and (max-width: 960px) {
     .flow .p_img, .scebox .p_img {
-        /* width: 78vw; */
         display: none;
     }
 }
