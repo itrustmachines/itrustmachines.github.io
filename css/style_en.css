@@ -1040,10 +1040,15 @@ html, body {
 
 @media only screen and (max-width: 960px) {
     .flow .p_img, .scebox .p_img {
+        /* width: 78vw; */
+        display: none;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .video {
         width: 78vw;
     }
 }
-
 .flow .m_img, .scebox .m_img {
     display: none;
 }
