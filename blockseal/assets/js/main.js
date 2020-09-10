@@ -13,10 +13,10 @@ $(function () {
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
             $(".navbar-area").removeClass("sticky");
-            $(".navbar .navbar-brand img").attr("src", "assets/images/BlockSeal_logo.png");
+            $(".navbar .navbar-brand img").attr("src", "assets/images/BlockSeal_logo_white.png");
         } else {
             $(".navbar-area").addClass("sticky");
-            $(".navbar .navbar-brand img").attr("src", "assets/images/BlockSeal_logo4.png");
+            $(".navbar .navbar-brand img").attr("src", "assets/images/BlockSeal_logo3.png");
         }
     });
 
