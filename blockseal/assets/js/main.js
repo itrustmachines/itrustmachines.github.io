@@ -16,7 +16,7 @@ $(function () {
             $(".navbar .navbar-brand img").attr("src", "assets/images/BlockSeal_logo_white.png");
         } else {
             $(".navbar-area").addClass("sticky");
-            $(".navbar .navbar-brand img").attr("src", "assets/images/BlockSeal_logo3.png");
+            $(".navbar .navbar-brand img").attr("src", "assets/images/BlockSeal_logo_black.png");
         }
     });
 
