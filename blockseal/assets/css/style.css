@@ -847,6 +847,16 @@ p {
   .single-logo:hover img {
     opacity: 1; }
 
+  .single-logo .sunnet_logo {
+    width: 40%;
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+
 /*===========================
       04.SERVICES css 
 ===========================*/
