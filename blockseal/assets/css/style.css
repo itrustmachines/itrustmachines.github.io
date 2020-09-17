@@ -734,6 +734,15 @@ p {
     -o-transform: translateY(-50%);
     transform: translateY(-50%); } }
 
+.cta-btn .main-btn {
+  height: 70px;
+  line-height: 70px;
+  width: 100%;
+  background: -webkit-linear-gradient(left, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: -o-linear-gradient(left, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background-size: 200%; }
+
 .navbar-btn .main-btn {
   height: 45px;
   line-height: 45px;
@@ -821,6 +830,22 @@ p {
   .brand-logo {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; } }
+
+@media (max-width: 991px) {
+  .arrow {
+    display: none;
+  }
+}
+
+.arrow-down {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .arrow-down {
+    display: block;
+  }
+}
 
 .single-logo {
   padding: 0 30px; }
