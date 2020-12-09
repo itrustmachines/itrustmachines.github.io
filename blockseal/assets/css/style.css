@@ -574,6 +574,32 @@ p {
     box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
     padding: 5px 12px; } }
 
+.custom-dropdown {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding-left: 0px;
+}
+
+.custom-dropdown:hover {
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .custom-dropdown {
+    color: #2E2E2E;
+    font-family: "Poppins", sans-serif;
+    padding-left: 0px;
+  }
+  .custom-dropdown:hover {
+    color: #2E2E2E;
+  }
+}
+
+.sticky .custom-dropdown {
+  display: block;
+  color: #2E2E2E;
+}
+
 @media (max-width: 767px) {
   .navbar-collapse {
     position: absolute;
@@ -737,7 +763,6 @@ p {
 .cta-btn .main-btn {
   height: 70px;
   line-height: 70px;
-  width: 100%;
   font-size: 24px;
   font-weight: bold;
   background: -webkit-linear-gradient(left, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
