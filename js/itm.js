@@ -23,6 +23,7 @@ $(function () {
         var ah4 = $('#a04').offset().top - 200;
         var ah5 = $('#a05').offset().top - 300;
         var ah6 = $('#a06').offset().top - 300;
+        var ah7 = $('#a07').offset().top - 300;
         if (sx >= ah1 && sx < ah2) {
             ACTION(1);
             $(".b_m li a").removeClass('act');
@@ -43,11 +44,15 @@ $(function () {
             ACTION(5);
             $(".b_m li a").removeClass('act');
             $(".b_m li:nth-of-type(5) a").addClass('act');
-        } else if (sx >= ah6) {
+        } else if (sx >= ah6 && sx < ah7) {
             ACTION(6);
             $(".b_m li a").removeClass('act');
             $(".b_m li:nth-of-type(6) a").addClass('act');
-        }
+        } else if (sx >= ah7) {
+            ACTION(7);
+            $(".b_m li a").removeClass('act');
+            $(".b_m li:nth-of-type(7) a").addClass('act');
+        } 
     })
     GOTOP();
     MENU();
@@ -135,7 +140,13 @@ function MENU() {
         $(this).addClass('act');
         return false;
     });
-
+    $(".b_m li:nth-of-type(7) a").on("click", function () {
+        ACTION(6);
+        $('html,body').stop().animate({scrollTop: $("#a07").offset().top}, 800);
+        $(".b_m li a").removeClass('act');
+        $(this).addClass('act');
+        return false;
+    });
 }
 
 function MM() {
@@ -169,6 +180,11 @@ function MM() {
         $('html,body').stop().animate({scrollTop: $("#a06").offset().top}, 800);
         return false;
     });
+    $(".m_m ul li:nth-of-type(7) a").on("click", function () {
+        ACTION(7);
+        $('html,body').stop().animate({scrollTop: $("#a07").offset().top}, 800);
+        return false;
+    });
 
 }
 
@@ -192,6 +208,23 @@ function ACTION(num) {
         case 6:
             $("#b06").stop().delay(500).animate({opacity: 1, paddingTop: 0}, 500);
             break;
+        case 7:
+            $("#b07").stop().delay(500).animate({opacity: 1, paddingTop: 0}, 500);
+            break;
     }
 
 }
+
+$('.story_modal').hide()
+$('.backdrop').hide()
+
+$(window).load(function() {
+    $('.client_pic').click(function() {
+        $('.story_modal').show()
+        $('.backdrop').show()
+    })
+    $('.backdrop').click(function() {
+        $('.story_modal').hide()
+        $('.backdrop').hide()
+    })
+})

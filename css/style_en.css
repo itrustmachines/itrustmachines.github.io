@@ -252,6 +252,8 @@ html, body {
     font-size: 15px;
     z-index: 11;
     background-color: #222430;
+    display: flex;
+    align-items: center;
 }
 
 @media only screen and (max-width: 960px) {
@@ -261,15 +263,12 @@ html, body {
 }
 
 .menu .logo {
-    float: left;
     margin-left: 30px;
-    margin-top: 20px;
 }
 
 .menu .b_m {
-    float: right;
-    margin-right: 30px;
-    margin-top: 20px;
+    flex-grow: 2;
+    text-align: center;
 }
 
 @media only screen and (max-width: 960px) {
@@ -343,12 +342,18 @@ html, body {
     background-color: #11cdd4;
 }
 
+.menu .material-icons {
+    color: #fff;
+    font-size: 22px;
+    margin: 0 30px 0 80px;
+}
+
 .kv {
     width: 100%;
 }
 
 .kv .slogan {
-    width: 1200px;
+    /* width: 1200px; */
     height: 1000px;
     position: relative;
     top: 70px;
@@ -367,7 +372,7 @@ html, body {
     width: 347px;
     height: 500px;
     position: absolute;
-    top: 200px;
+    top: 170px;
     left: 50%;
     margin-left: -173px;
     text-align: center;
@@ -386,8 +391,8 @@ html, body {
 }
 
 .kv .slogan .box img {
-    width: 100%;
-    display: block;
+    width: 110%;
+    margin-bottom: 20px;
 }
 
 .kv .slogan .box h1 {
@@ -402,7 +407,7 @@ html, body {
 }
 
 .kv .slogan .box h2 {
-    font-size: 14.3px;
+    font-size: 16px;
     letter-spacing: 1px;
     line-height: 20px;
     font-family: "Roboto", sans-serif;
@@ -664,6 +669,12 @@ html, body {
     }
 }
 
+.client {
+    width: 100%;
+    /* height: 3000px; */
+    background: url(../img/scbg.png) center #292b39 repeat;
+}
+
 .team {
     width: 100%;
     height: auto;
@@ -714,13 +725,13 @@ html, body {
     height: 200px;
     background-color: #292b39;
     position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer .foimg {
-    width: 63px;
-    height: 27px;
-    margin: 25px auto 10px auto;
+    margin: 30px 0 20px;
 }
 
 .footer p {
@@ -806,7 +817,7 @@ html, body {
 
 .all_box .tittle_left {
     float: left;
-    margin: 130px 0 90px 90px;
+    margin: 130px 0 60px 90px;
     font-family: "Microsoft JhengHei";
 }
 
@@ -1121,6 +1132,318 @@ html, body {
     .flow .m_img, .scebox .m_img {
         display: block;
     }
+}
+
+.clientbox {
+    position: relative;
+    width: 1020px;
+    height: auto;
+    margin: 0 0 0 90px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.clientbox .client_info {
+    width: 325px;
+    /* display: inline-flex; */
+    /* flex-wrap: nowrap; */
+    margin: 0 0 30px -4px;
+    /* border: 1px solid gold; */
+}
+
+.clientbox .client_info a {
+    text-decoration: none;
+    display: block;
+}
+
+.clientbox .client_info a:hover {
+    cursor: pointer;
+}
+
+.clientbox .client_info a .client_pic {
+    height: 200px;
+    overflow: hidden;
+}
+
+.clientbox .client_info a .client_pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    filter: brightness(0.7);
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.clientbox .client_info a:hover img {
+    width: 110%;
+    margin: -5px 0 0 -5px;
+    filter: brightness(1);
+}
+
+.clientbox .client_info .story_modal {
+    z-index: 3;
+    background-color: #fff;
+    min-width: 400px;
+    width: 1200px;
+    height: 560px;
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden auto;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.story_modal .section {
+    display: flex;
+    /* margin-bottom: 30px; */
+    min-height: 560px;
+    /* border: 1px solid salmon; */
+}
+
+.story_modal .section .title_bg {
+    color: #fff;
+    min-width: 300px;
+    max-width: 450px;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px 20px;
+    letter-spacing: 1px;
+}
+
+.story_modal .section01 .title_bg {
+    background: no-repeat center/110% url('../img/client_1.png');
+}
+
+.story_modal .section02 .title_bg {
+    background: no-repeat left top/110% url('../img/client_2.png');
+}
+
+.story_modal .section03 .title_bg {
+    background: no-repeat left/110% url('../img/client_3.png');
+}
+
+.story_modal .section .title_bg .title_container h1 {
+    letter-spacing: 6px;
+    font: 28px "Noto Sans TC";
+}
+
+.story_modal .section .title_bg .title_container h3 {
+    font: 16px "Noto Sans TC Light";
+    margin: 10px 0 15px;
+}
+
+.story_modal .section .title_bg .title_container p {
+    font: 10px "Noto Sans TC Light";
+    margin-top: 30px;
+}
+
+.story_modal .deco_line {
+    width: 90px;
+    height: 8px;
+    background-color: #fff;
+}
+
+.story_modal .section .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 615px; */
+}
+
+.story_modal .section .content h1, p, ul {
+    color: #222222;
+    letter-spacing: 1px;
+}
+
+.story_modal .section .content .content_wrapper {
+    margin: 30px 40px 0 80px;
+}
+
+.story_modal .section .content .content_wrapper .title_logo {
+    display: flex;
+    align-items: self-start; 
+}
+
+.story_modal .section .content .content_wrapper .title_logo .title {
+    margin: 0 0 10px 30px;
+
+}
+
+.story_modal .section .content .content_wrapper .title_logo .title h1 {
+    letter-spacing: 1px;
+    font: 30px/1.5 "Noto Sans TC Light";
+}
+
+.story_modal .section .content .content_wrapper .title_logo .title .blue {
+    margin: 20px 5px;
+    background-color: #364d62;
+}
+
+.story_modal .section .content .content_wrapper .text_container {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;    
+    letter-spacing: 0.1px;
+}
+
+.story_modal .section .content .content_wrapper .text_container .empha_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.story_modal .section .content .content_wrapper .text_container .empha_wrapper .empha_text {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 15px;
+    position: relative;
+    padding-left: 5px;
+}
+
+.story_modal .section .content .content_wrapper .text_container .empha_wrapper .empha_text::before {
+    content: '';
+    background: no-repeat center/70% url('../img/client_deco_01.png');
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    top: -30px;
+    left: -25px;
+    z-index: -1;
+}
+
+.story_modal .section .content .content_wrapper .text_container .empha_wrapper .empha_text::after {
+    content: '';
+    background: no-repeat center/70% url('../img/client_deco_02.png');
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    bottom: 20px;
+    right: -18px;
+    z-index: -1;
+}
+
+.story_modal .section .content .content_wrapper .text_container .empha_wrapper .source {
+    font: italic 15px/1.6 "Noto Sans TC Light";
+    margin-top: 5px;
+}
+
+.story_modal .section .content .content_wrapper .text_container .text {
+    font: 15px/1.6 "Noto Sans TC Light";
+    padding-left: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.story_modal .section .content .content_wrapper .text_container .text .source {
+    font: italic 15px/1.6 "Noto Sans TC Light";
+    margin-top: 5px;
+}
+
+.story_modal .section .content .content_wrapper .text_container li {
+    list-style: disc;
+    font: 15px/1.2 "Noto Sans TC Light";
+    margin-top: 10px;
+}
+
+.story_modal .section .content .content_wrapper .text_container li .bold_color {
+    font-weight: bold;
+    color: #84b5d5;
+}
+
+.story_modal .section .content .bottom_container {
+    display: flex;
+    flex-direction: column;
+}
+.story_modal .section .content .bottom_container .copyright_info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+.story_modal .section .content .bottom_container .copyright_info p {
+    margin: 8px 25px;
+    font: 12px "Noto Sans Tc Light";
+    letter-spacing: 0.8px;
+}
+
+.story_modal .section .content .bottom_container .block {
+    background-color: #364d62;
+    height: 15px;
+}
+
+.clientbox .backdrop {
+    background-color: rgba(0, 0, 0, 0.185);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.clientbox .client_info a p {
+    font-size: 12px;
+    color: #11cdd4;
+    margin: 10px auto;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.clientbox .client_info a:hover p {
+    color: #fff;
+}
+
+.clientbox .client_info a h2 {
+    font-size: 15px;
+    /* height: 75px; */
+    color: #fff;
+    line-height: 24px;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.clientbox .client_info a:hover h2 {
+    color: #11cdd4;
+}
+
+.clientbox .client_info a .btn {
+    width: 90px;
+    height: 30px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    background-color: #11cdd4;
+    color: #292b39;
+    text-align: center;
+    font-size: 13px;
+    line-height: 30px;
+    margin: 20px auto;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.clientbox .client_info a:hover .btn {
+    background-color: #fff;
+    color: #11cdd4;
 }
 
 .teambox {
