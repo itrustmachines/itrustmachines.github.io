@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 <body>
 <div id="jSplash"></div>
@@ -37,12 +38,19 @@
         <li><a href="javascript:;" title="客戶案例">客戶案例</a></li>
         <li><a href="javascript:;" title="專業團隊">專業團隊</a></li>
         <li><a href="javascript:;" title="最新消息">最新消息</a></li>
-        <li><a href="javascript:;" title="聯絡我們">聯絡我們</a></li>
-        <!-- <li><a href="index.html" title="ENGLISH">ENGLISH</a></li> -->
       </ul>
       <div class="language_dropdown">
-        <span class="material-icons">language</span>
-        <!-- language sub-menu -->
+        <div class="icon_wrapper">
+          <span class="material-icons">language</span>
+        </div>
+        <div class="sub_menu">
+          <div class="language">
+            <a href="#" title="繁體中文">繁體中文</a>
+          </div>
+          <div class="language">
+            <a href="index.html" title="ENGLISH">ENGLISH</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -57,12 +65,19 @@
     <li><a href="javascript:;" title="客戶案例">客戶案例</a></li>
     <li><a href="javascript:;" title="專業團隊">專業團隊</a></li>
     <li><a href="javascript:;" title="最新消息">最新消息</a></li>
-    <li><a href="javascript:;" title="聯絡我們">聯絡我們</a></li>
-    <!-- <li><a href="index.html" title="ENGLISH">ENGLISH</a></li> -->
   </ul>
   <div class="language_dropdown">
-    <span class="material-icons">language</span>
-    <!-- language sub-menu -->
+    <div class="icon_wrapper">
+      <span class="material-icons">language</span>
+    </div>
+    <div class="sub_menu">
+      <div class="language">
+        <a href="#" title="繁體中文">繁體中文</a>
+      </div>
+      <div class="language">
+        <a href="index.html" title="ENGLISH">ENGLISH</a>
+      </div>
+    </div>
   </div>
 </div>
 <div class="kv">
@@ -892,41 +907,52 @@
       </div>
     </div>
   </div>
-  <div id="a07" class="contact">
-    <div id="b07" class="all_box">
-      <div class="tittle_right">
-        <h2>CONTACT US</h2>
-        <h3>聯絡我們</h3>
-        <p>若您希望與我們進一步接觸，請聯繫我們</p>
-      </div>
-      <div class="contactbox">
-        <div class="address">
-          <h2>台北</h2>
-          <p>
-            地址 : 106台北市大安區基隆路三段130號四樓411室<br>
-            電話 : +886 2 2368-5148<br>
-            信箱 : <a href="mailto:support@itrustmachines.com">support@itrustmachines.com</a></p>
-          <div class="btn2"><a href="mailto:support@itrustmachines.com">聯絡我們</a></div>
-        </div>
-        <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.5110240629274!2d121.5409377509977!3d25.01672604505818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa2418bb88a5%3A0xda18fec074c0a579!2zMTA25Y-w5YyX5biC5aSn5a6J5Y2A5Z-66ZqG6Lev5LiJ5q61MTMw6Jmf!5e0!3m2!1szh-TW!2stw!4v1554963583468!5m2!1szh-TW!2stw"
-                  frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="footer">
-    <div class="foimg"><img src="img/itm_logo_new.png" alt="ITM國際信任機器股份有限公司" height="30"></div>
-    <p>Copyright © ITM. All rights reserved.</p>
-    <div class="icon">
-      <a href="https://www.facebook.com/itrustmachines/" title="Facebook Page" target="_blank"><img src="img/fb.png" alt="fb"></a>
-      <a href="https://www.linkedin.com/company/itrustmachines/" title="linkedin" target="_blank"><img src="img/linkedin-round.png" alt="linkedin"></a>
-      <!-- <a href="#" title="instagram" target="_blank"><img src="img/ig.png" alt="instagram"></a>
-      <a href="#" title="Medium" target="_blank"><img src="img/m.png" alt="Medium"></a> -->
+    <div class="menu_container">
+      <div class="menu_list">
+        <h2>產品</h2>
+        <a href="#a02">核心技術</a>
+        <a href="#a03">應用場景</a>
+        <a href="blockseal/" target="_blank">BlockSeal</a>
+      </div>
+      <div class="menu_list">
+        <h2>關於ITM</h2>
+        <a href="#a01">公司介紹</a>
+        <a href="#a06">最新消息 </a>
+        <a href="#a05">專業團隊</a>
+      </div>
+      <div class="menu_list contact_us">
+        <h2>聯絡我們</h2>
+        <p>地址 : 
+          <a href="https://www.google.com/maps/place/ITM%E5%9C%8B%E9%9A%9B%E4%BF%A1%E4%BB%BB%E6%A9%9F%E5%99%A8%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/@25.0167212,121.5409431,17z/data=!4m13!1m7!3m6!1s0x3442aa2418bb88a5:0x18b5fc9443b10d5c!2zMTA25Y-w5YyX5biC5aSn5a6J5Y2A5Z-66ZqG6Lev5LiJ5q61MTMw6Jmf5Zub5qiTNDEx5a6k!3b1!8m2!3d25.0167212!4d121.5431318!3m4!1s0x0:0xc6e16cd6dd8714a4!8m2!3d25.0166783!4d121.5431755" target="_blank">
+            106台北市大安區基隆路三段130號四樓411室
+          </a>
+        </p>
+        <p>電話 : +886 2 2368-5148</p>
+        <p>信箱 : 
+          <a href="mailto:support@itrustmachines.com" title="Email us" target="_blank">
+            support@itrustmachines.com
+          </a>
+        </p>
+      </div>
+      <div class="logo_copyright">
+        <div class="foimg"><img src="img/itm_logo_new.png" alt="ITM國際信任機器股份有限公司" height="25"></div>
+        <p>Copyright © ITM. All rights reserved.</p>
+        <div class="contact_icon">
+          <a href="https://www.facebook.com/itrustmachines/" title="ITM Facebook" target="_blank">
+            <span class="material-icons">facebook</span>
+          </a>
+          <a href="https://www.linkedin.com/company/itrustmachines/" title="ITM Linkedin" target="_blank">
+            <span class="iconify" data-icon="mdi-linkedin" data-inline="false"></span>
+          </a>
+          <a href="mailto:support@itrustmachines.com" title="Email us" target="_blank">
+            <span class="material-icons">email</span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
+<!-- </div> -->
 
 </body>
 <script src="js/lib/jquery-1.11.0.min.js"></script>
