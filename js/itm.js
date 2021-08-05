@@ -57,7 +57,7 @@ $(function () {
     $(".hb a").click(function () {
         $(".hb a").toggleClass("change");
         // $(".m_m").slideToggle("slow");
-        $(".m_m").stop(true, false).animate({width: "toggle"}, 300);
+        $(".m_m").stop(true, false).animate({opacity: "toggle"}, 300);
     });
 
 
@@ -174,45 +174,62 @@ function MM() {
 function ACTION(num) {
     switch (num) {
         case 1:
-            $("#b01").stop().delay(500).animate({opacity: 1, paddingTop: 0}, 500);
+            $("#b01").stop().delay(400).animate({opacity: 1, paddingTop: 0}, 300);
             break;
         case 2:
-            $("#b02").stop().delay(500).animate({opacity: 1, paddingTop: 0}, 500);
+            $("#b02").stop().delay(400).animate({opacity: 1, paddingTop: 0}, 300);
             break;
         case 3:
-            $("#b03").stop().delay(500).animate({opacity: 1, paddingTop: 0}, 500);
+            $("#b03").stop().delay(400).animate({opacity: 1, paddingTop: 0}, 300);
             break;
         case 4:
-            $("#b04").stop().delay(500).animate({opacity: 1, paddingTop: 0}, 500);
+            $("#b04").stop().delay(400).animate({opacity: 1, paddingTop: 0}, 300);
             break;
         case 5:
-            $("#b05").stop().delay(500).animate({opacity: 1, paddingTop: 0}, 500);
+            $("#b05").stop().delay(400).animate({opacity: 1, paddingTop: 0}, 300);
             break;
         case 6:
-            $("#b06").stop().delay(500).animate({opacity: 1, paddingTop: 0}, 500);
+            $("#b06").stop().delay(400).animate({opacity: 1, paddingTop: 0}, 300);
             break;
     }
 
 }
 
 // show Client Stories modal
-$('.story_modal').hide()
-$('.backdrop').hide()
-
 $(window).load(function() {
-    $('.client_pic').click(function() {
-        $('.story_modal').show()
-        $('.backdrop').show()
+    $('.story_modal').hide()
+    $('.backdrop').hide()
+
+    $('.client_pic').click(function(event) {
+        let $target = $(event.target) // img.test_img
+        let $parent = $target.parent().parent().parent() // client_info
+
+        $parent.find('.story_modal').show()
+        $parent.parent().find('.backdrop').show()
     })
+
+    $('.client_info .btn').click(function(event) {
+        let $target = $(event.target) // div.btn
+        let $parent = $target.parent().parent() // client_info
+
+        $parent.find('.story_modal').show()
+        $parent.parent().find('.backdrop').show()
+    })
+    
     $('.backdrop').click(function() {
         $('.story_modal').hide()
         $('.backdrop').hide()
     })
 })
 
-// Switch Language dropdown
+// Switch Language dropdown - hover
 $('.language_dropdown').mouseenter(function() {
     $('.sub_menu').show()
 }).mouseleave(function() {
     $('.sub_menu').hide()
+})
+
+// Switch Language dropdown - click
+$('.language_dropdown').click(function() {
+    $('.sub_menu').toggle()
 })
