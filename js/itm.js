@@ -195,8 +195,8 @@ function ACTION(num) {
 
 }
 
-// show Client Stories modal
 $(window).load(function() {
+    // show Client Stories modal
     $('.story_modal').hide()
     $('.backdrop').hide()
 
@@ -220,16 +220,17 @@ $(window).load(function() {
         $('.story_modal').hide()
         $('.backdrop').hide()
     })
-})
-
-// Switch Language dropdown - hover
-$('.language_dropdown').mouseenter(function() {
-    $('.sub_menu').show()
-}).mouseleave(function() {
+    
+    // Switch Language dropdown - hover
     $('.sub_menu').hide()
-})
-
-// Switch Language dropdown - click
-$('.language_dropdown').click(function() {
-    $('.sub_menu').toggle()
+    $('.language_dropdown').mouseenter(function() {
+        $('.sub_menu').show()
+    }).mouseleave(function() {
+        $('.sub_menu').hide()
+    })
+    
+    // Switch Language dropdown - click
+    $('.language_dropdown').click(function() {
+        $('.sub_menu').toggle()
+    })
 })

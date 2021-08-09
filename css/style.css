@@ -1384,7 +1384,13 @@ html, body {
 
 @media only screen and (max-width: 900px) {
     .story_modal .section .content .content_wrapper {
-        margin: 30px;
+        margin: 25px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .story_modal .section .content .content_wrapper {
+        margin: 30px 10px;
     }
 }
 
@@ -1471,6 +1477,7 @@ html, body {
 @media only screen and (max-width: 900px) {
     .story_modal .section .content .content_wrapper .text_container .empha_wrapper .empha_text {
         font-size: 14px;
+        text-align: left;
     }
 }
 
@@ -1511,6 +1518,12 @@ html, body {
     font: 15px/1.6 "Noto Sans TC Light";
     padding-left: 10px;
     margin-top: 30px;
+}
+
+@media only screen and (max-width: 414px) {
+    .story_modal .section .content .content_wrapper .text_container .text {
+        padding-left: 0;
+    }
 }
 
 .story_modal .section .content .content_wrapper .text_container div.text {
