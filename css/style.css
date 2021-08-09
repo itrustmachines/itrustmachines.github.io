@@ -354,6 +354,12 @@ html, body {
     font-size: 22px;
 }
 
+@media only screen and (max-width: 414px) {
+    .menu .language_dropdown .icon_wrapper .material-icons {
+        font-size: 24px;
+    }
+}
+
 .menu .language_dropdown .sub_menu {
     display: none;
     background-color: #fff;
@@ -364,6 +370,15 @@ html, body {
     width: 100px;
     box-shadow: 0px 0px 6px -1px #404040b5;
     text-align: center;
+}
+
+@media only screen and (max-width: 414px) {
+    .menu .language_dropdown .sub_menu {
+        display: block;
+        width: 110px;
+        height: 90px;
+        top: 55px;  
+    }
 }
 
 .menu .language_dropdown .sub_menu::after {
@@ -383,6 +398,15 @@ html, body {
     -webkit-transition: all 0.1s ease-out;
 }
 
+@media only screen and (max-width: 414px) {
+    .menu .language_dropdown .sub_menu .language {
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .menu .language_dropdown .sub_menu .language:hover {
     border-radius: 5px;
     transition: all 0.3s ease-out;
@@ -400,6 +424,12 @@ html, body {
     -webkit-transition: all 0.1s ease-out;
     display: block;
     padding: 12px;
+}
+
+@media only screen and (max-width: 414px) {
+    .menu .language_dropdown .sub_menu .language a {
+        font-size: 16px;
+    }
 }
 
 .menu .language_dropdown .sub_menu .language:hover > a {

@@ -62,3 +62,7 @@
 .footer .menu_container .menu_list {
     width: 240px;
 }
+
+.footer .menu_container .logo_copyright {
+    margin-left: 20px;
+}
