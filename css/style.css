@@ -247,6 +247,7 @@ html, body {
 @media only screen and (max-width: 900px) {
     .menu .logo {
         margin-left: 20px;
+        flex-grow: 1;
     }
 }
 
@@ -267,7 +268,7 @@ html, body {
 
 @media only screen and (max-width: 900px) {
     .menu .b_m {
-        visibility: hidden;
+        display: none;
     }
 }
 
@@ -352,6 +353,7 @@ html, body {
 .menu .language_dropdown .icon_wrapper .material-icons {
     color: #fff;
     font-size: 22px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 414px) {
@@ -1231,36 +1233,79 @@ html, body {
     filter: brightness(1);
 }
 
-.clientbox .client_info .story_modal {
-    z-index: 3;
-    background-color: #fff;
+.clientbox .client_info .modal_container {
     min-width: 400px;
-    width: 100%;
+    width: 95%;
     max-width: 1200px;
-    height: 560px;
+    height: 75vh;
     position: fixed;
     top: 120px;
     left: 50%;
     transform: translateX(-50%);
-    overflow: hidden auto;
-    border-radius: 2px;
-    display: flex;
-    flex-direction: column;
+    z-index: 3;
 }
 
 @media only screen and (max-width: 1200px) {
-    .clientbox .client_info .story_modal {
+    .clientbox .client_info .modal_container {
         width: 90%;
     }
 }
 
 @media only screen and (max-width: 576px) {
-    .clientbox .client_info .story_modal {
+    .clientbox .client_info .modal_container {
         width: 80%;
         min-width: 320px;
-        height: 550px;
     }
 }
+
+.clientbox .client_info .modal_container .close_btn {
+    color: #364d62;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    z-index: 10;
+    font-size: 36px;
+    cursor: pointer;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.clientbox .client_info .modal_container .close_btn:hover {
+    color: #11cdd4;
+}
+
+@media only screen and (max-width: 414px) {
+    .clientbox .client_info .modal_container .close_btn {
+        font-size: 26px;
+        top: 5px;
+        right: 5px;
+    }
+}
+
+.clientbox .client_info .story_modal {
+    /* z-index: 3; */
+    background-color: #fff;
+    /* min-width: 400px; */
+    /* width: 95%; */
+    /* max-width: 1200px; */
+    height: 75vh;
+    /* position: fixed; */
+    /* top: 120px; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    overflow: auto;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* @media only screen and (max-width: 576px) {
+    .clientbox .client_info .story_modal {
+        height: 80vh; 
+    }
+} */
 
 .story_modal .section {
     display: flex;
@@ -1588,7 +1633,7 @@ html, body {
 }
 
 .clientbox .backdrop {
-    background-color: rgb(0 0 0 / 50%);
+    background-color: #00000025;
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -1596,6 +1641,16 @@ html, body {
     left: 0;
     z-index: 2;
     cursor: pointer;
+}
+
+.clientbox .btn_container {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    border: 1px solid rebeccapurple;
 }
 
 .clientbox .client_info a p {

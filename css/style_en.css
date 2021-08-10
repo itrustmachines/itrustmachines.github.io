@@ -1,3 +1,28 @@
+@media only screen and (max-width: 1020px) {
+    .hb {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .menu .logo {
+        margin-left: 20px;
+        flex-grow: 1;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .menu a img {
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .menu .b_m {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 414px) {
     .menu .language_dropdown .icon_wrapper {
         margin-left: 30px;

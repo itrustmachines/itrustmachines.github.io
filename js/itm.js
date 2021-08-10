@@ -196,15 +196,15 @@ function ACTION(num) {
 }
 
 $(window).load(function() {
-    // show Client Stories modal
-    $('.story_modal').hide()
+    // open Client Stories modal
+    $('.modal_container').hide()
     $('.backdrop').hide()
 
     $('.client_pic').click(function(event) {
         let $target = $(event.target) // img.test_img
         let $parent = $target.parent().parent().parent() // client_info
 
-        $parent.find('.story_modal').show()
+        $parent.find('.modal_container').show()
         $parent.parent().find('.backdrop').show()
     })
 
@@ -212,25 +212,36 @@ $(window).load(function() {
         let $target = $(event.target) // div.btn
         let $parent = $target.parent().parent() // client_info
 
-        $parent.find('.story_modal').show()
+        $parent.find('.modal_container').show()
         $parent.parent().find('.backdrop').show()
     })
     
     $('.backdrop').click(function() {
-        $('.story_modal').hide()
+        $('.modal_container').hide()
         $('.backdrop').hide()
     })
-    
-    // Switch Language dropdown - hover
+
+    $('.close_btn').click(function() {
+        $('.modal_container').hide()
+        $('.backdrop').hide()
+    })
+
+    // hide client story modal when clicking navbar
+    // TODO add if-else
+    $('.menu .b_m li a').click(function() {
+        $('.modal_container').hide()
+        $('.backdrop').hide()
+    })
+
+    // Switch Language dropdown - click
     $('.sub_menu').hide()
-    $('.language_dropdown').mouseenter(function() {
+    $('.language_dropdown').click(function() {
         $('.sub_menu').show()
     }).mouseleave(function() {
         $('.sub_menu').hide()
     })
-    
-    // Switch Language dropdown - click
-    $('.language_dropdown').click(function() {
-        $('.sub_menu').toggle()
-    })
+    // $('.sub_menu').hide()
+    // $('.language_dropdown').click(function() {
+    //     $('.sub_menu').toggle()
+    // })
 })
