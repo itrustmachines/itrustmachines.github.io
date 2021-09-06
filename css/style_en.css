@@ -1,23 +1,17 @@
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1200px) {
     .hb {
         display: block;
     }
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1200px) {
     .menu .logo {
         margin-left: 20px;
         flex-grow: 1;
     }
 }
 
-@media only screen and (max-width: 1020px) {
-    .menu a img {
-        height: 25px;
-    }
-}
-
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1200px) {
     .menu .b_m {
         display: none;
     }
@@ -27,6 +21,74 @@
     .menu .language_dropdown .icon_wrapper {
         margin-left: 30px;
     }
+}
+
+@media only screen and (max-width: 1200px) {
+    .menu .cta_btn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .kv .bg .container {
+        width: 80%;
+    }
+}
+
+.kv .slogan .container .title h2 {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 976px) {
+    .kv .slogan .container .title h2 {
+        font-size: 14px;
+    }
+}
+
+.kv .slogan .container .desc h1 {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 976px) {
+    .kv .slogan .container .desc h1 {
+        font-size: 21px;
+    }
+}
+
+.kv .slogan .container .desc h2 {
+    letter-spacing: 1.2px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 976px) {
+    .kv .slogan .container .desc h2 {
+        font-size: 15px;
+    }
+}
+
+.kv .slogan .container .desc p {
+    font: 15px "Noto Sans SC";
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+    width: 75%;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width: 976px) {
+    .kv .slogan .container .desc p {
+        width: 100%;
+        font: 12px "Noto Sans SC";
+    }
+}
+
+.kv .slogan .container .cta_btn a {
+    padding: 8px 25px;
+    font-size: 16px;
+    letter-spacing: 2px;
 }
 
 @media only screen and (max-width: 414px) {

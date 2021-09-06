@@ -81,7 +81,7 @@ html, body {
     display: none;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1020px) {
     .hb {
         display: block;
     }
@@ -204,11 +204,11 @@ html, body {
 }
 
 .m_m ul p {
-    padding: 12% 0 0 20%;
+    padding: 10% 0 0 20%;
 }
 
 .m_m ul li {
-    padding: 12% 0 0 20%;
+    padding: 10% 0 0 20%;
 }
 
 .m_m ul li a {
@@ -222,16 +222,56 @@ html, body {
 .m_m ul li a::after {
     content: "";
     display: block;
-    width: 35px;
-    height: 3px;
+    /* width: 35px;
+    height: 3px; */
+    width: 0;
+    height: 0;
     background-color: #11cdd4;
     margin-top: 10px;
+}
+
+.menu .m_m .language_dropdown {
+    height: 25px;
+}
+
+.menu .m_m .language_dropdown .sub_menu {
+    top: 30px;
+    left: 90px;
+    width: 100px;
+}
+
+.menu .m_m .language_dropdown .sub_menu .language {
+    display: flex;
+    justify-content: center;
+}
+
+.menu .m_m .language_dropdown .sub_menu .language a {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1020px) {
+    .menu .m_m .cta_btn {
+        display: flex;
+    }
+}
+
+.menu .m_m .cta_btn a {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 120px;
 }
 
 .menu {
     width: 100%;
     height: 70px;
-    position: fixed;
+    position: sticky;
     top: 0;
     font-size: 15px;
     z-index: 15;
@@ -244,20 +284,17 @@ html, body {
     margin-left: 30px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1020px) {
     .menu .logo {
         margin-left: 20px;
         flex-grow: 1;
     }
 }
 
-@media only screen and (max-width: 900px) {
-    .menu a img {
-        height: 25px;
-    }
-}
-
 .menu .b_m {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-grow: 2;
     text-align: center;
     -moz-transition: 0.1s;
@@ -266,7 +303,7 @@ html, body {
     transition: 0.1s;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1020px) {
     .menu .b_m {
         display: none;
     }
@@ -341,13 +378,12 @@ html, body {
 .menu .language_dropdown {
     position: relative;
     height: 70px;
-    display: flex;
+    display: flex !important;
     align-items: center;
 }
 
 .menu .language_dropdown .icon_wrapper {
     cursor: default;
-    margin: 0 30px 0 80px;
 }
 
 .menu .language_dropdown .icon_wrapper .material-icons {
@@ -368,7 +404,7 @@ html, body {
     border-radius: 5px;
     position: absolute;
     top: 50px;
-    right: 20px;
+    left: 0;
     width: 100px;
     box-shadow: 0px 0px 6px -1px #404040b5;
     text-align: center;
@@ -438,17 +474,196 @@ html, body {
     color: #11cdd4;
 }
 
+@media only screen and (max-width: 1020px) {
+    .menu .cta_btn {
+        display: none;
+    }
+}
+
+.menu .cta_btn a {
+    border: 2px solid #11cdd4;
+    color: #fff;
+    background-color: #11cdd478;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    margin-right: 20px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+.menu .cta_btn a:hover {
+    background-color: #11cdd4;
+    color: #fff;
+}
+
 .kv {
     width: 100%;
 }
 
 .kv .slogan {
-    height: 1000px;
     position: relative;
-    top: 70px;
     z-index: 9;
     margin: auto;
-    background-color: #0000005e;
+    background-image: url('../img/background01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 70%;   
+    background-attachment: fixed;
+}
+
+.kv .slogan .bg {
+    background-color: #00000096;
+}
+
+.kv .bg .container {
+    height: 100vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(-2em);
+}
+
+@media only screen and (max-width: 576px) {
+    .kv .bg .container {
+        width: 80%;
+    }
+}
+
+.kv .slogan .container .title {
+    color: #fff;
+}
+
+.kv .slogan .container .title a img {
+    max-width: 160px;
+}
+
+@media only screen and (max-width: 576px) {
+    .kv .slogan .container .title a img {
+        max-width: 140px;
+    }
+}
+
+.kv .slogan .container .title h1 {
+    font: 20px "Noto Sans TC";
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+}
+
+@media only screen and (max-width: 576px) {
+    .kv .slogan .container .title h1 {
+        font: 16px "Noto Sans TC";
+    }
+}
+
+.kv .slogan .container .title h2 {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 576px) {
+    .kv .slogan .container .title h2 {
+        font-size: 12px;
+    }
+}
+
+.kv .slogan .container .desc {
+    position: relative;
+    margin-top: 80px;
+}
+
+.kv .slogan .container .desc::before {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 1.5px;
+    background-color: #fff;
+    position: absolute;
+    top: -45px;
+    left: 5px;
+}
+
+.kv .slogan .container .desc h1 {
+    color: #fff;
+    font-size: 28px;
+    letter-spacing: 4px;
+    margin-top: 25px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 576px) {
+    .kv .slogan .container .desc h1 {
+        font-size: 24px;
+    }
+}
+
+.kv .slogan .container .desc h2 {
+    color: #18e0e7;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+}
+
+@media only screen and (max-width: 576px) {
+    .kv .slogan .container .desc h2 {
+        font-size: 18px;
+    }
+}
+
+.kv .slogan .container .desc p {
+    color: #fff;
+    letter-spacing: 2px;
+    font: 17px "Noto Sans TC";
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+    .kv .slogan .container .desc p {
+        font: 15px "Noto Sans TC";
+        line-height: 1.5;
+    }
+}
+
+.kv .slogan .container .cta_btn {
+    margin-top: 80px;
+}
+
+.kv .slogan .container .cta_btn a {
+    border: 2px solid #11cdd4;
+    color: #fff;
+    background-color: #11cdd478;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    text-decoration: none;
+    padding: 10px 35px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-right: 20px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+@media only screen and (max-width: 576px) {
+    .kv .slogan .container .cta_btn a {
+        padding: 8px 30px;
+        font-size: 16px;
+    }
+}
+
+.kv .slogan .container .cta_btn a:hover {
+    background-color: #11cdd4;
+    color: #fff;
 }
 
 .kv .slogan .box {
