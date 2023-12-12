@@ -2107,6 +2107,9 @@ html, body {
 .newsbox .info a .newpic {
     height: 160px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 768px) {
